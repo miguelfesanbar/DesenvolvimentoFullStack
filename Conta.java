@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Conta{
   private Pessoa cliente;
   private static int nrConta = 0;
