@@ -5,6 +5,7 @@ public class PessoaFisica extends Pessoa{
   private LocalDate dtNascimento;
   private String genero;
 
+  //construtor 
   public PessoaFisica(int id, String nome, String endereco, int cpf, LocalDate dtNascimento, String genero) {
     super(id, nome, endereco);
     this.cpf = cpf;
@@ -34,5 +35,11 @@ public class PessoaFisica extends Pessoa{
 
   public void setGenero(String genero) {
     this.genero = genero;
+  }
+
+  public Period getIdade() {
+  LocalDate dataCheck = LocalDate.now();
+	Period idade = Period.between(dtNascimento, dataCheck);
+  return idade;
   }
 }

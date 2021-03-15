@@ -3,8 +3,9 @@ public class Conta{
   private static int nrConta = 0;
   private double saldo;
   
+  //construtor abrirConta
   public Conta(Pessoa cliente){
-    Conta.nrConta = Conta.nrConta +1;
+    Conta.nrConta = Conta.nrConta + 1;
     this.cliente = cliente;
     this.saldo = 0;
   }
@@ -26,10 +27,9 @@ public class Conta{
   }
 
   public String sacar(double valorSaque, double limite){
-   
 	  if(saldo + limite >= valorSaque) {
 		  saldo = saldo - valorSaque;
-		  return "Saque realizado com sucesso!";
+		  return "Saque efetuado com sucesso!";
 	  }else {
 		  return "Saldo insuficiente!";
 	  }
@@ -46,10 +46,9 @@ public class Conta{
     }else{
       return false;
     }
-    
   }
   
-  public double deposito(double deposito) {
+  public double depositar(double deposito) {
 	  saldo = saldo + deposito;
 	  return saldo;
   }
@@ -59,8 +58,8 @@ public class Conta{
 		  return "Saldo insuficiente para transferência";
 	  }else {
 		  contaOrigem.debitar(valorTransferencia);
-		  contaDestino.deposito(valorTransferencia);
-		  return "Transfêrencia realizada com sucesso!";
+		  contaDestino.depositar(valorTransferencia);
+		  return "Transfêrencia efetuada com sucesso!";
 	  }
   }
 }

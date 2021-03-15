@@ -1,17 +1,17 @@
 public class ContaEspecial extends Conta{
+  private double limite;
 
-    public ContaEspecial(Pessoa cliente, double limite) {
-          super(cliente);
-          this.limite = limite;
-      }
+  //construtor abrirConta
+  public ContaEspecial(Pessoa cliente, double limite) {
+    super(cliente);
+    this.limite = limite;
+  }
   
-    private double limite;
-  
-    public double getLimite() {
-      return limite;
-    }
+  public double getLimite() {
+    return limite;
+  }
     
-    public void setLimite(double limite) {
-      this.limite = limite;
-    }
+  public void setLimite(double limite) {
+    this.limite = limite;
+  }
 }
