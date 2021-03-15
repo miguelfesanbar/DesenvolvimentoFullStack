@@ -37,9 +37,7 @@ public class PessoaFisica extends Pessoa{
     this.genero = genero;
   }
 
-  public Period getIdade() {
-  LocalDate dataCheck = LocalDate.now();
-	Period idade = Period.between(dtNascimento, dataCheck);
-  return idade;
+  public int getIdade(final LocalDate dtNascimento) {
+  return Period.between(dtNascimento, LocalDate.now()).getYears();
   }
 }
