@@ -5,7 +5,6 @@ public class main {
 		
 		System.out.println("Início!\n");
 		LocalDate date1 = LocalDate.of(1991, 3, 10);
-		LocalDate date2 = LocalDate.of(2021, 1, 1);
 		
 		PessoaFisica pf1 = new PessoaFisica(01, "Miguel", "Rua 20", 123123, date1, "Masculino");
 		System.out.println("Pessoa Física: "+pf1.getNome()+" cadastrada!");
