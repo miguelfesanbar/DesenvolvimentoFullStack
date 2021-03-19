@@ -24,7 +24,7 @@ public class Menu {
 					break;
 
 				case 3:
-					this.cadatrarCliente(sc);
+					this.cadastrarCliente(sc);
 					break;
 
 				case 4:
@@ -46,7 +46,7 @@ public class Menu {
 
 	}
 
-	private void cadatrarCliente(Scanner sc) {
+	private void cadastrarCliente(Scanner sc) {
 
 		System.out.println("--- Novo Cliente-----");
 		System.out.println("Selecione o tipo de Pessoa");
