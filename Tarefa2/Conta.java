@@ -5,8 +5,13 @@ public class Conta {
 	private Pessoa cliente;
 	private Integer nrConta;
 	protected Double saldo;
-	
-	
+	private Categoria tipo;
+	private enum Categoria{
+		Simples,
+		Executiva,
+		Premium,
+		Personalite
+	}
 	
 	public Conta(Pessoa cliente, Integer nrConta, Double saldo) {
 		super();
@@ -55,7 +60,7 @@ public class Conta {
 	
 	public void depositar(Double valor) {
 		this.acrescentar(valor);
-		System.out.println("Dep�sito realizado com sucesso!");
+		System.out.println("Deposito realizado com sucesso!");
 		System.out.println("Novo Saldo: "+this.saldo);
 	}
 	
@@ -63,7 +68,7 @@ public class Conta {
 		if(this.temSaldo(valor)) {
 			this.debitar(valor);
 			destino.acrescentar(valor);
-			System.out.println("Transfer�ncia com sucesso! Novo Saldo: "+this.saldo);
+			System.out.println("Transferencia com sucesso! Novo Saldo: "+this.saldo);
 		}else {
 			System.out.println("Saldo Insuficiente");
 		}

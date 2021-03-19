@@ -1,8 +1,8 @@
 package Tarefa2;
 
-public class MinhaException extends Exception {
+public class Erro extends Exception {
 	private static final long serialVersionUID = 1L;
-	public MinhaException(String msg) {
+	public Erro(String msg) {
 		super(msg);
 	}
 }

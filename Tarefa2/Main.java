@@ -16,15 +16,15 @@ public class Main {
 		
 		
 		@SuppressWarnings("deprecation")
-		PessoaFisica luiz = new PessoaFisica(1, "Luiz", "An�polis", 999, new Date(2002, 12, 1), "Masculino");
+		PessoaFisica luiz = new PessoaFisica(1, "Luiz", "Anapolis", 999, new Date(2002, 12, 1), "Masculino");
 		@SuppressWarnings("deprecation")
-		PessoaFisica maria = new PessoaFisica(2, "Maria", "Goi�nia", 888, new Date(2001, 9, 10), "Feminino");
+		PessoaFisica maria = new PessoaFisica(2, "Maria", "Goiania", 888, new Date(2001, 9, 10), "Feminino");
 
 		System.out.println(luiz.getIdade());
 		System.out.println(maria.getIdade());
 		
-		PessoaJuridica apple = new PessoaJuridica(3, "Apple SA", "Calif�nia", 111, "Tecnologia");
-		PessoaJuridica padaria = new PessoaJuridica(4, "P�o de Queijo e Companhia", "Setor Universit�rio", 222, "Alimentos");
+		PessoaJuridica apple = new PessoaJuridica(3, "Apple SA", "California", 111, "Tecnologia");
+		PessoaJuridica padaria = new PessoaJuridica(4, "Pao de Queijo e Companhia", "Setor Universitario", 222, "Alimentos");
 	
 		ContaEspecial ceLuiz = new ContaEspecial(luiz, 1, 1000.0, 500.0);
 		ContaPoupanca cpMaria = new ContaPoupanca(maria, 2, 500.0, 0.02);
@@ -48,7 +48,7 @@ public class Main {
 		menu.menuPrincipal(sc);
 		System.out.println("-------------------------");
 		System.out.println("-- Programa encerrado!---");
-		System.out.println("------- At� Mais!--------");
+		System.out.println("------- Ate Mais!--------");
 		System.out.println("-------------------------");
 		
 		sc.close();

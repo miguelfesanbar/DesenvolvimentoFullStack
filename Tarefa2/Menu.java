@@ -15,7 +15,7 @@ public class Menu {
 				escolha = sc.nextInt();
 				switch (escolha) {
 				case 1:
-					System.out.println("Implentar Abrir Nova Conta");
+					System.out.println("Implementar Abrir Nova Conta");
 					break;
 
 				case 2:
@@ -28,18 +28,18 @@ public class Menu {
 					break;
 
 				case 4:
-					System.out.println("Implentar Relat�rios");
+					System.out.println("Implementar Relatorios");
 					break;
 
 				case 5:
-					System.out.println("5 � Sair");
+					System.out.println("5 - Sair");
 					break;
 
 				default:
-					System.out.println("Op��o Incorreta");
+					System.out.println("Opcao Incorreta");
 				}
 			} catch (Exception e) {
-				System.out.println("Op��o Incorreta, sair.");
+				System.out.println("Opcao Incorreta, sair.");
 				escolha = 5;
 			}
 		} while (escolha != 5);
@@ -50,8 +50,8 @@ public class Menu {
 
 		System.out.println("--- Novo Cliente-----");
 		System.out.println("Selecione o tipo de Pessoa");
-		System.out.println("1 - Pessoa F�sica");
-		System.out.println("2 - Pessoa Jur�dica");
+		System.out.println("1 - Pessoa Fisica");
+		System.out.println("2 - Pessoa Juridica");
 		
 		Integer tipo = sc.nextInt();
 		
@@ -62,7 +62,7 @@ public class Menu {
 		System.out.println("--- Informe o Nome -----");
 		String nome = sc.nextLine();
 		
-		System.out.println("--- Informe o Endere�o -----");
+		System.out.println("--- Informe o Endereco -----");
 		String endereco = sc.nextLine();
 		
 		if(tipo == 1) {
@@ -85,7 +85,7 @@ public class Menu {
 			System.out.println("--- Informe o Nome -----");
 			String cnpj = sc.nextLine();
 			
-			System.out.println("--- Informe o Endere�o -----");
+			System.out.println("--- Informe o Endereco -----");
 			String atividade = sc.nextLine();
 			
 			Main.clientes.add(new PessoaJuridica(id, nome, endereco, id, atividade));
@@ -106,7 +106,7 @@ public class Menu {
 					// alterar conta
 					break;
 				case 2: 
-					System.out.println("Informe o Valor do Dep�sito");
+					System.out.println("Informe o Valor do Deposito");
 					vr = sc.nextDouble();
 					conta.depositar(vr);
 					break;
@@ -118,7 +118,7 @@ public class Menu {
 					break;
 				case 4: 
 					Conta dest = this.buscarConta(sc);
-					System.out.println("Informe o Valor para Transfer�ncia");
+					System.out.println("Informe o Valor para Transferencia");
 					vr = sc.nextDouble();
 					conta.transferir(vr, dest);
 					break;
@@ -131,7 +131,7 @@ public class Menu {
 				}
 
 			}  catch (Exception e) {
-				System.out.println("Op��o Incorreta, sair.");
+				System.out.println("Opcao Incorreta, sair.");
 				escolha = 6;
 			}
 		}while (escolha != 6);
@@ -139,13 +139,13 @@ public class Menu {
 
 	private void showMenuPrincipal() {
 		System.out.println("-------------------------");
-		System.out.println("---Selecione Uma Op��o---");
+		System.out.println("---Selecione Uma Opcao---");
 		System.out.println("-------------------------");
-		System.out.println("1 � Abrir Nova Conta");
-		System.out.println("2 � Selecionar Conta");
-		System.out.println("3 � Cadastrar Cliente");
-		System.out.println("4 � Relat�rios");
-		System.out.println("5 � Sair");
+		System.out.println("1 - Abrir Nova Conta");
+		System.out.println("2 - Selecionar Conta");
+		System.out.println("3 - Cadastrar Cliente");
+		System.out.println("4 - Relatorios");
+		System.out.println("5 - Sair");
 		System.out.println("-------------------------");
 	}
 
@@ -154,14 +154,14 @@ public class Menu {
 		System.out.println("Cliente: " + conta.getCliente().getNome());
 		System.out.println("Nr Conta: " + conta.getNrConta());
 		System.out.println("-------------------------");
-		System.out.println("---Selecione Uma Op��o---");
+		System.out.println("---Selecione Uma Opcao---");
 		System.out.println("-------------------------");
-		System.out.println("1 � Alterar Conta");
-		System.out.println("2 � Deposito");
-		System.out.println("3 � Saque");
-		System.out.println("4 � Transfer�ncia");
-		System.out.println("5 � Saldo");
-		System.out.println("6 � Sair");
+		System.out.println("1 - Alterar Conta");
+		System.out.println("2 - Deposito");
+		System.out.println("3 - Saque");
+		System.out.println("4 - Transferencia");
+		System.out.println("5 - Saldo");
+		System.out.println("6 - Sair");
 		System.out.println("-------------------------");
 	}
 
@@ -170,7 +170,7 @@ public class Menu {
 		Conta conta = null;
 		do {
 			System.out.println("------------------------------");
-			System.out.println("---Digite o n�mero da Conta---");
+			System.out.println("---Digite o numero da Conta---");
 			System.out.println("------------------------------");
 			Integer escolha = sc.nextInt();
 			for (Conta c : Main.contas) {
@@ -182,7 +182,7 @@ public class Menu {
 			}
 			if (conta == null) {
 				System.out.println("------------------------------");
-				System.out.println("-----Conta N�o Encontrada-----");
+				System.out.println("-----Conta Nao Encontrada-----");
 				System.out.println("------------------------------");				
 			}
 
