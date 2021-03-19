@@ -1,4 +1,4 @@
-package tarefa1;
+package Tarefa1;
 
 public class Conta{
   private Pessoa cliente;
