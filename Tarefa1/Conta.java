@@ -1,3 +1,5 @@
+package tarefa1;
+
 public class Conta{
   private Pessoa cliente;
   private static int nrConta = 0;
