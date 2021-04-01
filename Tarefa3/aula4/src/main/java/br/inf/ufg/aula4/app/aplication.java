@@ -5,6 +5,7 @@ import br.inf.ufg.aula4.ctrl.OfertaCtrl;
 import br.inf.ufg.aula4.ctrl.PessoaCtrl;
 import br.inf.ufg.aula4.ctrl.ProfessorCtrl;
 
+
 public class aplication {
 
 	public static void main(String[] args) {
