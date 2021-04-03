@@ -16,8 +16,6 @@ import br.inf.ufg.aula4.model.entities.Disciplina;
 
 public class DB {
 	
-	public static List<Disciplina> disciplinas = new ArrayList<Disciplina>();
-
 	private static Connection conn = null;
 
 	public static Connection getConnection() throws DbException {
@@ -30,12 +28,11 @@ public class DB {
 				throw new DbException(e.getMessage());
 			}
 		}
-		
 		return conn;
 	}
 
 	private static Properties loadProperties() throws DbException {
-		try (FileInputStream fs = new FileInputStream("aula4/db.properties")) {
+		try (FileInputStream fs = new FileInputStream("Tarefa3/aula4/db.properties")) {
 			Properties props = new Properties();
 			props.load(fs);
 			return props;

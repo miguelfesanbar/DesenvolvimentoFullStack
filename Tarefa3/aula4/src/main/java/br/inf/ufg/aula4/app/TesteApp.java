@@ -29,10 +29,10 @@ public class TesteApp {
 		/* Inserir Disciplinas */
 		Disciplina disc1 = new Disciplina(null, "Des. FullStack", 64);
 		Disciplina disc2 = new Disciplina(null, "LLP", 60);
-		Disciplina disc3 = new Disciplina(null, "Matem�tica", 30);
-		Disciplina disc4 = new Disciplina(1, "Ingl�s", 10);
-		Disciplina disc5 = new Disciplina(2, "L�gica", 40);
-		Disciplina disc6 = new Disciplina(3, "Matem�tica", 30);
+		Disciplina disc3 = new Disciplina(null, "Matematica", 30);
+		Disciplina disc4 = new Disciplina(1, "Ingles", 10);
+		Disciplina disc5 = new Disciplina(2, "Logica", 40);
+		Disciplina disc6 = new Disciplina(3, "Matematica", 30);
 		ctrl.inserir(disc1);
 		ctrl.inserir(disc2);
 		ctrl.inserir(disc3);
@@ -101,16 +101,16 @@ public class TesteApp {
 		/* Alterado a pessoa */
 		pes4.setCpf(11111111111l);
 		;
-		pes4.setNmPessoa("Jos� " + pes4.getNmPessoa());
+		pes4.setNmPessoa("Jose " + pes4.getNmPessoa());
 		ctrl.alterar(pes4);
 
-		System.out.println("--------------------------------------------------");
-		/* Exclu�ndo pessoa */
+		/*System.out.println("--------------------------------------------------");
+		 Excluindo pessoa 
 		ctrl.excluir(pes3.getIdPessoa());
 		System.out.println("Pessoas Cadastradas");
 		for (Pessoa dis : ctrl.buscaTodos()) {
 			System.out.println(dis);
-		}
+		}*/
 
 		System.out.println("--------------------------------------------------");
 		System.out.println(ctrl.buscaPorId(1));
