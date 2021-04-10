@@ -57,7 +57,7 @@ public class PessoaCtrl {
 	public void excluir(Integer id) {
 		try {
 			negocio.excluir(id);
-			System.out.println("Pessoa exclu�da com sucesso.");
+			System.out.println("Pessoa excluida com sucesso.");
 		} catch (PessoaExection e) {
 			System.out.println("Erro ao tentar excluir a pessoa");
 			System.out.println(e.getMessage());

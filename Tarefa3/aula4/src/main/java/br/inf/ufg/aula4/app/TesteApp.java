@@ -58,7 +58,7 @@ public class TesteApp {
 		ctrl.alterar(disc3);
 
 		System.out.println("--------------------------------------------------");
-		/* Exclu�ndo disciplina */
+		/* Excluindo disciplina */
 		ctrl.excluir(disc1.getIdDisciplina());
 		System.out.println("Disciplinas Cadastradas");
 		for (Disciplina dis : ctrl.buscaTodos()) {

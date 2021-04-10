@@ -43,11 +43,11 @@ public class DisciplinaNegocio {
 		
 		private void validarDisciplina(Disciplina disciplina) throws DisciplinaExection {
 			if (disciplina.getCargaHoraria() <= 0) {
-				throw new DisciplinaExection("Carga hor�ria deve ter maior que 0.");
+				throw new DisciplinaExection("Carga horaria deve ter maior que 0.");
 			}
 
 			if (disciplina.getNmDisciplina() == null || disciplina.getNmDisciplina().length() == 0) {
-				throw new DisciplinaExection("Nome da disciplina � obrigat�rio.");
+				throw new DisciplinaExection("Nome da disciplina e obrigatorio.");
 			}
 		}
 }

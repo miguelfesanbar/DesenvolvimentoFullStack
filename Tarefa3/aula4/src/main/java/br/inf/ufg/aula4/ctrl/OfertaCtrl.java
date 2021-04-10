@@ -71,7 +71,7 @@ public class OfertaCtrl {
 	public void excluir(Integer id) {
 		try {
 			negocio.excluir(id);
-			System.out.println("Oferta exclu�do com sucesso.");
+			System.out.println("Oferta excluida com sucesso.");
 		} catch (OfertaExection e) {
 			System.out.println("Erro ao tentar excluir o oferta");
 			System.out.println(e.getMessage());

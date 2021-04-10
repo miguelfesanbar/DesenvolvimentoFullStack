@@ -45,7 +45,7 @@ public class PessoaNegocio {
 		private void validarPessoa(Pessoa pessoa) throws PessoaExection {
 			
 			if (pessoa.getNmPessoa() == null || pessoa.getNmPessoa().length() == 0) {
-				throw new PessoaExection("Nome da pessoa � obrigat�rio.");
+				throw new PessoaExection("Nome da pessoa e obrigatorio.");
 			}
 
 			if (pessoa.getCpf().toString().length() != 11) {

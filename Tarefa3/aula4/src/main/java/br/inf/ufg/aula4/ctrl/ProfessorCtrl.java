@@ -57,7 +57,7 @@ public class ProfessorCtrl {
 	public void excluir(Integer id) {
 		try {
 			negocio.excluir(id);
-			System.out.println("Professor exclu�do com sucesso.");
+			System.out.println("Professor excluido com sucesso.");
 		} catch (ProfessorExection e) {
 			System.out.println("Erro ao tentar excluir o professor");
 			System.out.println(e.getMessage());

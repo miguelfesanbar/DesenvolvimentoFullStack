@@ -57,7 +57,7 @@ public class DisciplinaCtrl {
 	public void excluir(Integer id) {
 		try {
 			negocio.excluir(id);
-			System.out.println("Disciplina exclu�da com sucesso.");
+			System.out.println("Disciplina excluida com sucesso.");
 		} catch (DisciplinaExection e) {
 			System.out.println("Erro ao tentar excluir a disciplina");
 			System.out.println(e.getMessage());

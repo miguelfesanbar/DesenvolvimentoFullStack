@@ -36,7 +36,7 @@ public class ProfessorNegocio {
 		
 		private void validarProfessor(Professor professor) throws ProfessorExection {
 			if (professor.getPessoa() == null) {
-				throw new ProfessorExection("� necess�rio vicular uma pessoa ao professor.");
+				throw new ProfessorExection("É necessário vicular uma pessoa ao professor.");
 			}
 		}
 }
