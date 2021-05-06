@@ -26,23 +26,86 @@ var concluido = false;
 var decimal = false;
 var display = document.querySelector('.display');
 
+
 btAdd.addEventListener('click', function(){
     decimal = false;
     op = "+";
     addDisplay("+");
 });
 
+btSub.addEventListener('click', function(){
+    decimal = false;
+    op = "-";
+    addDisplay("-");
+});
+
+btMul.addEventListener('click', function(){
+    decimal = false;
+    op = "*";
+    addDisplay("*");
+});
+
+btDiv.addEventListener('click', function(){
+    decimal = false;
+    op = "/";
+    addDisplay("/");
+});
+
+btPonto.addEventListener('click', function(){
+    decimal = false;
+    op = "%";
+    addDisplay("%");
+});
 
 bt1.addEventListener('click', function(){
     addCalc(1);
     addDisplay(1);
 });
+
 bt2.addEventListener('click', function(){
     addCalc(2);
     addDisplay(2);
 });
 
+bt3.addEventListener('click', function(){
+    addCalc(3);
+    addDisplay(3);
+});
 
+bt4.addEventListener('click', function(){
+    addCalc(4);
+    addDisplay(4);
+});
+
+bt5.addEventListener('click', function(){
+    addCalc(5);
+    addDisplay(5);
+});
+
+bt6.addEventListener('click', function(){
+    addCalc(6);
+    addDisplay(6);
+});
+
+bt7.addEventListener('click', function(){
+    addCalc(7);
+    addDisplay(7);
+});
+
+bt8.addEventListener('click', function(){
+    addCalc(8);
+    addDisplay(8);
+});
+
+bt9.addEventListener('click', function(){
+    addCalc(9);
+    addDisplay(9);
+});
+
+bt0.addEventListener('click', function(){
+    addCalc(0);
+    addDisplay(0);
+});
 
 function addCalc(n){
     if(concluido){
