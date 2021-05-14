@@ -1,4 +1,3 @@
-package Tarefa2;
 
 public class ContaEspecial extends Conta {
 	private Double limite;

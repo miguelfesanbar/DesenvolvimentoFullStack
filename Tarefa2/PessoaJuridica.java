@@ -1,4 +1,3 @@
-package Tarefa2;
 
 public class PessoaJuridica extends Pessoa {
 	private Integer cnpj;

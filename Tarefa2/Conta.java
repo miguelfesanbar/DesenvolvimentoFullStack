@@ -1,4 +1,3 @@
-package Tarefa2;
 
 public class Conta {
 

@@ -1,4 +1,4 @@
-package Tarefa2;
+
 
 public class Pessoa {
 	Integer id;
